@@ -25,4 +25,4 @@ jobs:
           sleep 30
       - name : Run Locust with part A configuration
         run :
-          locust --headless --host http://127.0.0.1:5000 --users 10000 --spawn-rate 100 SimpleUser
+          locust --headless --host http://127.0.0.1:5000 --users 10000 --spawn-rate 100 -t 120 SimpleUser
